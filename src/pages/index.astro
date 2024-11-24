@@ -1,20 +1,24 @@
 ---
-import "../global.css"
+import Layout from "../layouts/Layout.astro"
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>DrinkLiquidIce</title>
-	</head>
-	<body class="bg-green-300 flex justify-center flex-col items-center gap-4 h-screen">
-		<h1 class="text-7xl font-rubik underline text-slate-50" >
+<Layout>
+	<h1 class="text-7xl font-rubik underline text-slate-800" >
 			DrinkLiquidIce</h1>
-		<p class="font-rubik my-9"> 
+		<p class="font-rubik my-9 text-slate-800"> 
 			Hi! My name is Chloe
 		</p>
-	</body>
-</html>
+		<div class = "flex gap-4">
+			<a href="/aboutme" class="rounded-md p-3 bg-emerald-700 text-slate-50"> 
+				About Me
+			</a>
+			<a href="/projects" class="rounded-md p-3 bg-emerald-700 text-slate-50"> 
+				Projects
+			</a>
+		</div>
+		<div class = "flex gap-9">
+			<a href="https://github.com/drinkliquidice" target="_blank" class="rounded-md p-3 bg-emerald-700 text-slate-50"> 
+				GitHub
+			</a>
+		</div>
+	</Layout>
