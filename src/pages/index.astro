@@ -1,24 +1,30 @@
 ---
+import { Image } from "astro:assets"
+import highpeanutpfp from "../../public/highpeanutpfp.png"
 import Layout from "../layouts/Layout.astro"
+import Button from "../components/Button.astro"
+import Titles from "../components/Titles.astro"
 ---
 
 <Layout>
-	<h1 class="text-7xl font-rubik underline text-slate-800" >
-			DrinkLiquidIce </h1>
+	<div class="flex gap-4">
+		<Titles>
+				DrinkLiquidIce 
+		</Titles>
+		<Image src={highpeanutpfp} alt="Peanut" class="border-4 border-slate-800 rounded-full w-20 h-20" /> 
+	</div>
 		<p class="font-rubik my-9 text-slate-800"> 
-			Hi! My name is Chloe
+			Hi! My name is Chloe and this is an archive of my joys in life
 		</p>
-		<div class = "flex gap-4">
-			<a href="/aboutme" class="rounded-md p-3 bg-emerald-700 text-slate-50"> 
+		<div class="flex gap-4">
+			<Button href="/aboutme" > 
 				About Me
-			</a>
-			<a href="/projects" class="rounded-md p-3 bg-emerald-700 text-slate-50"> 
+			</Button>
+			<Button href="/projects" > 
 				Projects
-			</a>
-		</div>
-		<div class = "flex gap-9">
-			<a href="https://github.com/drinkliquidice" target="_blank" class="rounded-md p-3 bg-emerald-700 text-slate-50"> 
-				GitHub
-			</a>
+			</Button>
+			<Button href="/images" > 
+				Images
+			</Button>
 		</div>
 	</Layout>

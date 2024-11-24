@@ -1,4 +1,8 @@
 ---
+import { Image } from "astro:assets"
+import Github from "../images/Githubicon.svg"
+import Discord from "../images/Discordicon.svg"
+import Linkedin from "../images/Linkedinicon.svg"
 import "../global.css"
 ---
 
@@ -10,7 +14,18 @@ import "../global.css"
 		<meta name="generator" content={Astro.generator} />
 		<title>DrinkLiquidIce</title>
 	</head>
-	<body class="bg-gradient-to-r from-yellow-200 to-green-300 flex justify-center flex-col items-center gap-4 h-screen">
+	<footer class=" flex flex-row bg-gradient-to-r from-yellow-200 to-green-300 gap-4">
+		<a href="https://github.com/drinkliquidice" target="_blank" class="my-5 ms-4">
+			<Image src={Github} alt="Github" class="w-10 h-10" />
+		</a>
+		<a href="https://discord.com/users/637026487647600701" target="_blank" class="my-5">
+			<Image src={Discord} alt="Discord" class="w-10 h-10" />
+		</a>
+		<a href="https://www.linkedin.com/in/chloe-zhao-31b90927a/" target="_blank" class="my-5">
+			<Image src={Linkedin} alt="Linked" class="w-10 h-10" />
+		</a>
+	</footer>
+	<main class="bg-gradient-to-r from-yellow-200 to-green-300 flex justify-center flex-col items-center gap-4 h-screen">
 		<slot/>
-	</body>
+	</main>
 </html>
