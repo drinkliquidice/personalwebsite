@@ -11,13 +11,13 @@ import "../global.css"
 	<head>
 		<meta charset="utf-8" />
 		<link rel="icon" type="image/png+xml" href="/highpeanutpfp.png" />
-		<meta name="viewport" content="width=device-width" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta name="generator" content={Astro.generator} />
 		<title>DrinkLiquidIce</title>
 	</head>
-	<body class="bg-gradient-to-r from-yellow-200 to-green-300 flex flex-col h-screen">
+	<body class="bg-gradient-to-r from-yellow-200 to-green-300 flex flex-col h-screen bg-fixed w-screen">
 		<header class=" flex flex-row gap-4">
-			<a href="/" class=" my-5 ms-4 transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110">
+			<a href="/" class=" my-5 ms-4 transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110">
 				<Image src={Home} alt="Home" class="w-10 h-10 rounded-full" />
 			</a>
 			<a href="https://github.com/drinkliquidice" target="_blank" class=" my-5 transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110">
@@ -30,7 +30,7 @@ import "../global.css"
 				<Image src={Linkedin} alt="Linkedin" class="w-10 h-10" />
 			</a>
 		</header>
-		<main class="flex justify-center flex-col items-center gap-4 grow">
+		<main class="flex justify-center flex-col items-center gap-4 grow w-full">
 			<slot/>
 		</main>
 		
